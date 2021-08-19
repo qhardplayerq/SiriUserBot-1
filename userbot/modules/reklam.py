@@ -2,8 +2,7 @@ import logging
 logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s',
                     level=logging.WARNING)
 from telethon import events
-from datetime import datetime
-from userbot.util import admin_cmd
+from datetime import datetime 
 from userbot import bot
 
 @bot.on(admin_cmd(pattern="linkler"))
