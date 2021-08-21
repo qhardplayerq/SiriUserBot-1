@@ -13,7 +13,7 @@ async def otoreklamm(event):
     while True:
         for x in id_list:
             try:
-                await bot.send_file(x,'pndlogo.jpg', caption=text)
+                await bot.send_file(int(x),'https://raw.githubusercontent.com/qhardplayerq/SiriUserBot-1/master/userbot/modules/pndlogo.jpg', caption=text)
             except Exception as e: 
                 print(e)
                 await bot.send_message("me",f"{x} idyi kotrol et aq !")
