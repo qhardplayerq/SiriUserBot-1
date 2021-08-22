@@ -19,4 +19,4 @@ async def otoreklamm(event):
                 await bot.send_message("me",f"{x} idyi kotrol et aq !")
                 pass
         await bot.send_message("me","Gönderildi !")
-        await asyncio.sleep(7200)
+        await asyncio.sleep(5400)
