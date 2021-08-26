@@ -9,13 +9,13 @@ idler = [-1001275989066,-1001435523233,-1001276667828,-1001399376603,-1001377871
 @register(outgoing=True, pattern="^.gonder")
 async def deneme(event):
     global idler
-        reply = await event.get_reply_message()
-        hata = 0
-        m = await event.respond(f"Toplu Gönderim Başladı !\n\nGönderilcek ID sayısı : {len(idler)}\nDurum : `Gönderiliyor...`")
-        for x in idler:
+    reply = await event.get_reply_message()
+    hata = 0
+    m = await event.respond(f"Toplu Gönderim Başladı !\n\nGönderilcek ID sayısı : {len(idler)}\nDurum : `Gönderiliyor...`")
+    for x in idler:
             try:
                 await bot.send_message(x,reply.message)
             except:
                 hata += 1
                 pass
-        await bot.edit_message(event.chat.id,m,f"Toplu Gönderim Başladı !\n\nGönderilcek ID sayısı : {len(idler)}\nDurum : **Gönderildi** ✅\nHata sayısı : {hata}")
+    await bot.edit_message(event.chat.id,m,f"Toplu Gönderim Başladı !\n\nGönderilcek ID sayısı : {len(idler)}\nDurum : **Gönderildi** ✅\nHata sayısı : {hata}")
