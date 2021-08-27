@@ -4,7 +4,7 @@ from userbot.events import register
 from userbot import bot
 
 
-idler = [-1001586245726,-1001052096636]
+idler = [-1001052096636,-1001586245726]
 
 @register(outgoing=True, pattern="^.havva")
 async def deneme(event):
