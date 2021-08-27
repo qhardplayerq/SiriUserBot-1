@@ -6,7 +6,7 @@ from userbot import bot
 
 idler = [-1001586245726,-1001052096636]
 
-@register(outgoing=True, pattern="^.gonder")
+@register(outgoing=True, pattern="^.havva")
 async def deneme(event):
     global idler
     reply = await event.get_reply_message()
