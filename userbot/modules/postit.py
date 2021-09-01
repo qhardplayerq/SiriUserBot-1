@@ -12,7 +12,10 @@ async def postitf(message):
     await message.edit("`Post gönderiliyor...`")
     for kanal in kanallar:
         try:
-            await message.client.send_file(kanal, file=yanitlanan_mesaj.media, caption=yanitlanan_mesaj.text)
+            if yanitlanan_mesaj.media:
+                await message.client.send_file(kanal, file=yanitlanan_mesaj.media, caption=yanitlanan_mesaj.caption)
+            else:
+                message.client.send_message(kanal, yanitlanan_mesaj.text)
         except Exception as e:
             await message.reply(f"Bir kanala post gönderilemedi!\n\n{e}\n\n{kanal}")
         else:
