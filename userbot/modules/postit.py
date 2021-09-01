@@ -7,7 +7,7 @@ kanallar = [-1001285905728, -1001469818787, -1001275030556, -1001188302270, -100
 
 @register(pattern="^.post")
 async def postitf(message):
-    yanitlanan_mesaj = message.get_reply_message()
+    yanitlanan_mesaj = await message.get_reply_message()
     count = 0
     await message.edit("`Post gönderiliyor...`")
     for kanal in kanallar:
