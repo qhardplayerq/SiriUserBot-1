@@ -8,7 +8,7 @@ id_list = [-1001275989066,-1001435523233,-1001276667828,-1001399376603,-10013778
 @register(outgoing=True, pattern="^.otopnd")
 async def otoreklamm(event):
     global id_list
-    text = "**44TL CPM İLE 2 GÜN BOYUNCA PARA DAĞITIYORUZ** 🥳🥳\n\nSistemimiz, ayın 30-31'inde 44TL CPM ile kazancınıza kazanç katıcak.\n\nSAĞLAM SİSTEMİMİZ İLE ASLA SİZİ ÜZMÜYORUZ..\n\nSizde tıklanmalarınız eksik sayılmasına engel olmak ve 22TL CPM ile kazancına kazanç katmak için yapman gereken tek şey PND.TL ye gelmek\n\n👉 PND.TL TELEGRAM GRUBUMUZ İÇİN TIKLA 👈(https://t.me/joinchat/QXzIKZw5BV5mMmJk)"
+    text = "SAĞLAM SİSTEMİMİZ İLE ASLA SİZİ ÜZMÜYORUZ..\n\nÇÖKMEYEN VE TAM SAYAN SİSTEMİMİZ İLE SİZE EKSİKSİZ KAZANÇ SAĞLIYORUZ\n\nSizde tıklanmalarınız eksik sayılmasına engel olmak ve 22TL CPM ile kazancına kazanç katmak için yapman gereken tek şey PND.TL ye gelmek\n\n👉 PND.TL TELEGRAM GRUBUMUZ İÇİN TIKLA 👈(https://t.me/joinchat/QXzIKZw5BV5mMmJk)"
     await event.edit("Çalışıyor.")
     while True:
         for x in id_list:
