@@ -14,7 +14,7 @@ async def deneme(event):
     m = await event.respond(f"Toplu Gönderim Başladı !\n\nGönderilcek ID sayısı : {len(idler)}\nDurum : `Gönderiliyor...`")
     for x in idler:
         try:
-            await event.forward(x)
+            await reply.forward(x)
         except Exception as e:
             hata += 1
             await event.respond(str(e)
