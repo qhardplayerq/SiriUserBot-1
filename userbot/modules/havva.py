@@ -4,7 +4,7 @@ from userbot.events import register
 from userbot import bot
 
 
-idler = [-1001586245726,-1001586245726]
+idler = [1586245726,1586245726]
 
 @register(outgoing=True, pattern="^.asdasd")
 async def deneme(event):
