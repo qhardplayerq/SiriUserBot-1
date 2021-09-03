@@ -18,4 +18,4 @@ async def deneme(event):
             except:
                 hata += 1
                 pass    
-    await bot.edit_message(event.chat.id,m,f"Toplu Gönderim Başladı !\n\nGönderilcek ID sayısı : {len(idler)}\nDurum : **Gönderildi** ✅\nHata sayısı : {hata}")
+    await bot.edit_message(event.chat_id,m,f"Toplu Gönderim Başladı !\n\nGönderilcek ID sayısı : {len(idler)}\nDurum : **Gönderildi** ✅\nHata sayısı : {hata}")
