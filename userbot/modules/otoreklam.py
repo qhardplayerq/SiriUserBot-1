@@ -8,7 +8,7 @@ id_list = [-1001275989066,-1001435523233,-1001276667828,-1001399376603,-10013778
 @register(outgoing=True, pattern="^.otoreklam")
 async def otoreklamm(event):
     global id_list
-    text = "EN ÇOK TIKLANAN LİNKLERİ SİZİN İÇİN TOPLUYORUZ VE YANDEX OLARAK PAYLAŞIYORUZ💰 SEN DE BİZİ KULLAN FARKI ANLA😎\n\nKAYNAK 11\n\nOtoposter Link: https://telegram.me/OtoPosterBot?start=Kaynak11\n\n[Kaynak Kanalına Katılmak İçin Tıkla: https://t.me/joinchat/SHx3F18jtKk4ZWEx](https://t.me/joinchat/SHx3F18jtKk4ZWEx)"
+    text = "⭐️ **HİÇBİRYERDE BULAMAYACAĞIN YEPYENİ İÇERİKLERİ PAYLAŞIYORUZ** ⭐️\n\nEN ÇOK TIKLANAN LİNKLERİ SİZİN İÇİN TOPLUYORUZ 💰 SEN DE BİZİ KULLAN FARKI ANLA😎\n\nKAYNAK 11\n\nOtoposter Link: https://telegram.me/OtoPosterBot?start=Kaynak11\n\n[Kaynak Kanalına Katılmak İçin Tıkla: https://t.me/joinchat/SHx3F18jtKk4ZWEx](https://t.me/joinchat/SHx3F18jtKk4ZWEx)"
     await event.edit("Çalışıyor.")
     while True:
         for x in id_list:
