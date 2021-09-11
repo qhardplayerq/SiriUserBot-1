@@ -4,7 +4,9 @@ import requests
 # import aiohttp
 import asyncio
 from userbot import bot
-from userbot.util import admin_cmd
+from userbot import CMD_HELP
+from userbot.events import register
+from userbot.cmdhelp import CmdHelp
 from urllib.request import Request, urlopen
 WEB_HDRS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
@@ -19,7 +21,7 @@ logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s'
 logger = logging.getLogger(__name__)
 
  
-@bot.on(admin_cmd(pattern=("ks ?(.*)")))
+@register(pattern="^.ks")
 async def get_adzan(event):
   link = event.pattern_match.group(1).split('http')
   
