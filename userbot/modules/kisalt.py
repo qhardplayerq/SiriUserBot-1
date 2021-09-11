@@ -26,12 +26,12 @@ async def get_adzan(event):
     link = event.text.split()
     
     print(link)
-    url = f"https://www.pnd.tl/api?api=90edf199f17aa2f2455d8d624cc524a097627291&url={link[1]}&category=6"
+    url = f"https://www.pnd.tl/api?api=90edf199f17aa2f2455d8d624cc524a097627291&url={link[-1]}&category=6"
     
     ksl = requests.get(url).json()
     ksl = ksl['shortenedUrl']
     event.respond(link)
-    aciklama = " ".join(link[2:])
+    aciklama = " ".join(link[1:-1])
     #await event.edit(f"{aciklama}\n\n❌ SILINMEDEN IZLE ❌\n\n👉 {ksl}\n\nLink nasıl açılır\n👉@linkk_gecmee")
     #await event.edit(f"{aciklama}\n\n📛 SESİ AÇ 'a tıklamayı unutma\n\n👇DEVAMI LİNKTE👇\n\n𝐋𝐢𝐍𝐊🔗 {ksl}\n\n❗️Link nasıl açılır\n👉 https://t.me/linkk_gecmee")
     await event.edit(f"{aciklama}\n\n👇DEVAMI LİNKTE👇\n\n𝐋𝐢𝐍𝐊🔗 {ksl}")
