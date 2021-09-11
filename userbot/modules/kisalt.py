@@ -23,13 +23,14 @@ logger = logging.getLogger(__name__)
  
 @register(pattern="^.ks")
 async def get_adzan(event):
-    link = event.text.split().remove(".ks")
+    link = event.text.split()
     
     print(link)
     url = f"https://www.pnd.tl/api?api=90edf199f17aa2f2455d8d624cc524a097627291&url={link[1]}&category=6"
     
     ksl = requests.get(url).json()
     ksl = ksl['shortenedUrl']
+    event.respond(link)
     aciklama = " ".join(link)
     #await event.edit(f"{aciklama}\n\n❌ SILINMEDEN IZLE ❌\n\n👉 {ksl}\n\nLink nasıl açılır\n👉@linkk_gecmee")
     await event.edit(f"{aciklama}\n\n👇DEVAMI LİNKTE👇\n\n𝐋𝐢𝐍𝐊🔗 {ksl}")
