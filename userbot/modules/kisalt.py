@@ -23,7 +23,7 @@ logger = logging.getLogger(__name__)
  
 @register(pattern="^.ks")
 async def get_adzan(event):
-  link = event.pattern_match.group(1).split('http')
+  link = event.text.split()
   
   print(link)
   if link:
@@ -31,5 +31,6 @@ async def get_adzan(event):
 
         ksl = requests.get(url).json()
         ksl = ksl['shortenedUrl']
+        aciklama = " ".join(link[2:])
         #await event.edit(f"{link[1]}\n\n❌ SILINMEDEN IZLE ❌\n\n👉 {ksl}\n\nLink nasıl açılır\n👉@linkk_gecmee")
         await event.edit(f"{link[0]}\n\n👇DEVAMI LİNKTE👇\n\n𝐋𝐢𝐍𝐊🔗 {ksl}")
