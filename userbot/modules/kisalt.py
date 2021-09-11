@@ -33,5 +33,5 @@ async def get_adzan(event):
     event.respond(link)
     aciklama = " ".join(link[1:-1])
     #await event.edit(f"{aciklama}\n\n❌ SILINMEDEN IZLE ❌\n\n👉 {ksl}\n\nLink nasıl açılır\n👉@linkk_gecmee")
-    #await event.edit(f"{aciklama}\n\n📛 SESİ AÇ 'a tıklamayı unutma\n\n👇DEVAMI LİNKTE👇\n\n𝐋𝐢𝐍𝐊🔗 {ksl}\n\n❗️Link nasıl açılır\n👉 https://t.me/linkk_gecmee")
-    await event.edit(f"{aciklama}\n\n👇DEVAMI LİNKTE👇\n\n𝐋𝐢𝐍𝐊🔗 {ksl}")
+    await event.edit(f"{aciklama}\n\n📛 SESİ AÇ 'a tıklamayı unutma\n\n👇DEVAMI LİNKTE👇\n\n𝐋𝐢𝐍𝐊🔗 {ksl}\n\n❗️Link nasıl açılır\n👉 https://t.me/linkk_gecmee")
+    #await event.edit(f"{aciklama}\n\n👇DEVAMI LİNKTE👇\n\n𝐋𝐢𝐍𝐊🔗 {ksl}")
