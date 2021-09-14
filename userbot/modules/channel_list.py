@@ -6,4 +6,4 @@ from userbot import bot
 
 @register(outgoing=True, pattern="^.kanalım")
 async def mesaj(event):
-    await event.edit("**Terbiyesizmsnfbi**👇\nhttps://t.me/joinchat/V5uno4h5L43QKN9o")
+    await event.edit("**👑Kanal Linkimiz👑**👇\nhttps://t.me/joinchat/V5uno4h5L43QKN9o")
