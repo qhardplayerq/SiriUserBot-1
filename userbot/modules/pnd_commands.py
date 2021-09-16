@@ -29,6 +29,6 @@ async def mesaj(event):
  
 @register(outgoing=True, pattern="^.api")
 async def mesaj(event):
-    resim ='https://raw.githubusercontent.com/qhardplayerq/SiriUserBot-1/master/userbot/modules/araclar.PNG' 
+    resim ='https://raw.githubusercontent.com/qhardplayerq/SiriUserBot-1/master/userbot/modules/api.JPG' 
     text="APİ adresimize sol taraftaki meni çubuğundan **Araçlar** sekmesinden **Geliştirici API** bölümünden yeşil kutunun içinde bulabilirsiniz..."
     await event.client.send_file(event.chat_id, file=resim, caption=text)
