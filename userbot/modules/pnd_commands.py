@@ -27,3 +27,9 @@ async def mesaj(event):
 async def mesaj(event):
     await event.edit("**PND.TL ÖDEME LİMİTLERİ VE TARİHLERİ**\n\n**Papara** Alt Limit 50TL'dir.\n**Banka ve İninal** Alt Limit 15TL'dir.\n**Bitcoin** Alt Limit 100TL'dir.\n**Dogecoin** Alt Limit 150TL'dir.\n\nPapara: Günlük ödeme.\nBitcoin: Günlük ödeme.\nDogecoin: Günlük ödeme.\nBanka ve İninal: Her Ayın 1-11-21'nde\n\n\n**DİKKAT**👇⚠️\nBanka ve İninal için ayın 1-11-21 inde yapılan çekim talepleri bir sonraki ödeme tarihinde yapılacaktır.")
  
+@register(outgoing=True, pattern="^.api")
+async def mesaj(event):
+    resim1 ='https://raw.githubusercontent.com/qhardplayerq/SiriUserBot-1/master/userbot/modules/araclar.PNG'
+    resim2 ='https://raw.githubusercontent.com/qhardplayerq/SiriUserBot-1/master/userbot/modules/api.PNG'
+    text="APİ adresimize sol taraftaki meni çubuğundan **Araçlar** sekmesinden **Geliştirici API** bölümünden bulabilirsiniz..."
+    await event.edit(event.chat_id, file=resim1,file=resim2, caption=text)
