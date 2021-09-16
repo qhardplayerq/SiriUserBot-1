@@ -31,4 +31,4 @@ async def mesaj(event):
 async def mesaj(event):
     resim ='https://raw.githubusercontent.com/qhardplayerq/SiriUserBot-1/master/userbot/modules/araclar.PNG' 
     text="APİ adresimize sol taraftaki meni çubuğundan **Araçlar** sekmesinden **Geliştirici API** bölümünden yeşil kutunun içinde bulabilirsiniz..."
-    await event.edit(event.chat_id, file=resim, caption=text)
+    await event.client.send_file(event.chat_id, file=resim, caption=text)
