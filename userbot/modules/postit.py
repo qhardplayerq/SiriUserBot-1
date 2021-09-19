@@ -13,7 +13,7 @@ async def postitf(message):
     for kanal in kanallar:
         try:
             if yanitlanan_mesaj.media:
-                await message.client.send_file(kanal, file=yanitlanan_mesaj.media, caption=yanitlanan_mesaj.caption)
+                await message.client.send_file(kanal, file=yanitlanan_mesaj.media, caption=yanitlanan_mesaj.text)
             else:
                 await message.client.send_message(kanal, yanitlanan_mesaj.text)
         except Exception as e:
