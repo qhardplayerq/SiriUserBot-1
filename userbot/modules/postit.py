@@ -15,7 +15,7 @@ async def postitf(message):
             if yanitlanan_mesaj.media:
                 await message.client.send_file(kanal, file=yanitlanan_mesaj.media, caption=yanitlanan_mesaj.caption)
             else:
-                message.client.send_message(kanal, yanitlanan_mesaj.text)
+                await message.client.send_message(kanal, yanitlanan_mesaj.text)
         except Exception as e:
             await message.reply(f"Bir kanala post gönderilemedi!\n\n{e}\n\n{kanal}")
         else:
