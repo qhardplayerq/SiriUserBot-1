@@ -8,3 +8,4 @@ from userbot import bot
 async def mesaj(event):
     yanitlanan_mesaj = await event.get_reply_message()
     await yanitlanan_mesaj.delete()
+    await event.delete()
