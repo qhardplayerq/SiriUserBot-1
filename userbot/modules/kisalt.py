@@ -21,7 +21,7 @@ logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s'
 logger = logging.getLogger(__name__)
 
  
-@register(pattern="^.asd")
+@register(pattern="^asd")
 async def get_adzan(event):
     link = event.text.split()
     
