@@ -8,7 +8,7 @@ id_list = [-1001275989066,-1001435523233,-1001276667828,-1001399376603,-10013778
 @register(outgoing=True, pattern="^.otopnd")
 async def otoreklamm(event):
     global id_list
-    text = "**SAĞLAM SİSTEMİMİZ İLE ASLA SİZİ ÜZMÜYORUZ...**\n\nÇÖKMEYEN VE TAM SAYAN SİSTEMİMİZ İLE SİZE EKSİKSİZ KAZANÇ SAĞLIYORUZ\n\nSizde tıklanmalarınız eksik sayılmasına engel olmak ve 22TL CPM ile kazancına kazanç katmak için yapman gereken tek şey PND.TL ye gelmek\n\n[👉 PND.TL TELEGRAM GRUBUMUZ İÇİN TIKLA 👈](https://t.me/joinchat/QXzIKZw5BV5mMmJk)"
+    text = "PND.TL Olarak Türkiyedeki En yüksek CPM oranı veren site olarak kazancınıza kazanç katıyoruz\n\n**22TL CPM**\n**Eksiksiz Sayım**\n**Temiz IP Havuzu**\n**Bol Kazançlı Etkinlikler**\n**Kolay Reklam Geçişi**\n**Yetkililer İle Kolay İletişim**\n\nSizinde Tek Yapmanız Gereken Bizi Kullanmak\n\nSorularınız ve düşünceleriniz için DM 👇\nİletişim: @BlackkSkyyqq"
     await event.edit("Çalışıyor.")
     while True:
         for x in id_list:
@@ -19,4 +19,4 @@ async def otoreklamm(event):
                 await bot.send_message("me",f"{x} idyi kotrol et aq !")
                 pass
         await bot.send_message("me","Gönderildi !")
-        await asyncio.sleep(10800)
+        await asyncio.sleep(14500)
